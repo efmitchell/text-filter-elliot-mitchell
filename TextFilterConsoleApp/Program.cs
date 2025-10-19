@@ -22,6 +22,7 @@ builder.Services.AddSingleton<ITextProcessor, TextProcessor>();
 
 builder.Services.AddSingleton<ITextFilter, VowelMiddleFilter>();
 builder.Services.AddSingleton<ITextFilter, MinimumLengthFilter>();
+builder.Services.AddSingleton<ITextFilter, ContainsLetterFilter>();
 
 var app = builder.Build();
 
