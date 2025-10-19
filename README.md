@@ -1,4 +1,4 @@
-# Calastone Text Filter Application
+# Text Filter Application
 
 A C# .NET 8 console application that applies multiple configurable text filters to process text files.
 
