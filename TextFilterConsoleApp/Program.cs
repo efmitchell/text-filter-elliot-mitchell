@@ -21,6 +21,7 @@ builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddSingleton<ITextProcessor, TextProcessor>();
 
 builder.Services.AddSingleton<ITextFilter, VowelMiddleFilter>();
+builder.Services.AddSingleton<ITextFilter, MinimumLengthFilter>();
 
 var app = builder.Build();
 

@@ -17,11 +17,15 @@ public class VowelMiddleFilter : ITextFilter
     public bool ShouldFilter(string word)
     {
         if (!IsEnabled || string.IsNullOrEmpty(word))
+        {
             return false;
+        }
 
         var cleanWord = word.Trim().ToLowerInvariant();
         if (cleanWord.Length < 3)
+        {
             return false;
+        }
 
         var middleChars = GetMiddleCharacters(cleanWord);
         return middleChars.Any(c => Vowels.Contains(c));
