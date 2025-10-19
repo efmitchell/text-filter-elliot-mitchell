@@ -20,6 +20,7 @@ builder.Services.AddLogging(logging =>
 builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddSingleton<ITextProcessor, TextProcessor>();
 
+builder.Services.AddSingleton<ITextFilter, VowelMiddleFilter>();
 
 var app = builder.Build();
 
