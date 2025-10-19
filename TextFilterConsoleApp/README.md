@@ -27,13 +27,13 @@ A C# .NET 8 console application that applies multiple configurable text filters 
 ```bash
 # Clone the repository
 git clone [repository-url]
-cd calastone-text-filter-elliot-mitchell
+cd TextFilterConsoleApp
 
 # Restore dependencies
 dotnet restore
 
 # Run the application
-dotnet run --project calastone-text-filter-elliot-mitchell
+dotnet run --project TextFilterConsoleApp
 
 # Run all tests
 dotnet test
@@ -82,7 +82,6 @@ dotnet test
 
 # Run specific test category
 dotnet test --filter "VowelMiddleFilterTests"
-dotnet test --filter "ParallelTextProcessorTests"
 
 # Run with detailed output
 dotnet test --verbosity normal
